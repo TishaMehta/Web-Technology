@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Page</title>
+</head>
+<body>
+	<input type="text" id="username"></br>
+	<input type="password" id="password">
+	<input type="button" value="show" id="tooglebtn" onclick="tooglepass()"></br>
+	<input type="button" value="login" onclick="login()">
+	<script type="text/javascript">
+		function login(){
+			un=document.getElementById("username")
+			pw=document.getElementById("password")
+			if(un.value=="tisha" && pw.value=="tis2110" ){
+				document.write("valide user");
+			}
+			else{
+				document.write("username/ password does not match")
+			}
+		}
+		function tooglepass(){
+			p=document.getElementById("password")
+			tb=document.getElementById("tooglebtn")
+			if(p.type=="text"){
+				p.type="password";
+				tb.value="show"
+			}
+			else{
+				p.type="text"
+				tb.value="hide"
+			}
+		}
+	</script>
+</body>
+</html>
